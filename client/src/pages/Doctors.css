@@ -1,0 +1,94 @@
+/* Doctors Page */
+
+.doctors-filter-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.doctors-filter-row .input-field {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 0;
+}
+
+.doctor-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--text-light);
+  font-size: 1.15rem;
+}
+
+.specialization-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(14, 165, 164, 0.2));
+  color: var(--primary-light);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.doctor-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(148, 163, 184, 0.15);
+}
+
+.doctor-info-row:last-of-type {
+  border-bottom: none;
+}
+
+.doctor-info-label {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.doctor-info-value {
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 14px;
+  text-align: right;
+}
+
+.booking-form {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border);
+}
+
+.booking-form .input-field {
+  margin-bottom: 10px;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.doctor-card .btn {
+  margin-top: 12px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .doctors-filter-row {
+    flex-direction: column;
+  }
+
+  .doctors-filter-row .input-field {
+    min-width: 0;
+  }
+
+  .booking-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,58 @@
+.appointment-card {
+  position: relative;
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.appointment-header h3 {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.appointment-doctor-spec {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.appointment-info-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  row-gap: 10px;
+  max-width: 420px;
+}
+
+.appointment-info-label {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.appointment-info-value {
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.appointment-card .btn-danger {
+  margin-top: 16px;
+  width: auto;
+  padding: 9px 20px;
+}
+
+@media (max-width: 600px) {
+  .appointment-header {
+    flex-direction: column;
+  }
+  .appointment-info-grid {
+    max-width: 100%;
+  }
+}
